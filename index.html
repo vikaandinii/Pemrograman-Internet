@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Nilai Pemrograman Internet</title>
+    <!-- Memuat file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Memuat font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Input Nilai Pemrograman Internet</h2>
+
+    <!-- Menambahkan gambar dengan jalur relatif -->
+    <img src="images/logo.jpeg" alt="Logo" class="logo">
+
+    <form method="post" action="process.php">
+        <div class="input-group">
+            <label for="nama">Nama:</label>
+            <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" required>
+        </div>
+
+        <div class="input-group">
+            <label for="nim">NIM:</label>
+            <input type="text" name="nim" id="nim" placeholder="Masukkan NIM" required>
+        </div>
+
+        <div class="input-group">
+            <label for="nilai">Nilai (0 - 100):</label>
+            <input type="number" name="nilai" id="nilai" min="0" max="100" placeholder="Masukkan Nilai" required>
+        </div>
+
+        <button type="submit" name="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
